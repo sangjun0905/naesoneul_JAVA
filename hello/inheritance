@@ -1,0 +1,12 @@
+inheritance(상속)
+
+java.lang.Object
+	java.io.Writer
+		java.io.PrintWriter
+		
+// 하위 클래스가 상위 클래스로부터 상속 받았다 = 상위 클래스를 이용, 확장한 것이 하위클래스이다.
+
+Open  Type hierarchy 클릭 -> 클래스의 상속 관계 확인 가능
+
+Writer extends Object 
+PrintWriter extends Writer

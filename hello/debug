@@ -1,0 +1,6 @@
+1. 디버깅
+- 하고 싶은 줄 번호에 더블 클릭, breakpoint 단위로 실행
+- 디버그로 실행, 
+- Step over : 명령어 한 줄 실행
+- resume(play) : 명려어 한 단위 실행
+- Step into : 해당 method가 어떻게 이루어지는지 확인

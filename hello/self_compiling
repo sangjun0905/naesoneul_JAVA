@@ -1,0 +1,6 @@
+1. java 확장자 실행파일을 class 확장자 실행파일로 바꾸기
+- cmd에서 .java 파일이 존재하는 디렉토리 이동
+- javac SmartHome.java //컴파이일링 후 class 파일 생성
+- java SmartHome // class 파일 실행
+
+* args 인자를 이클립스에서는 미리 설정함으로만 값 입력 가능, cmd에서는 줄명령으로도 가능

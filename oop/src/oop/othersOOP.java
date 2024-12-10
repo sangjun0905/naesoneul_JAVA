@@ -21,7 +21,6 @@ public class othersOOP {
 		f2.close();
 		
 		
-		
 	}
 
 }

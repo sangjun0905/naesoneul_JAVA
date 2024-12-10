@@ -9,7 +9,7 @@ class Greeting{
 }
 
 /* public : 다른 클래스에서 사용 가능. 우선은 public만 사용해도 괜춘
- * private : 해당 클래스 내에서만 실행 가능
+ * private : 해당 클래스 내에서만 실행 가능!
  */
 
 

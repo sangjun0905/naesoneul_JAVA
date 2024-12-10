@@ -39,5 +39,4 @@ public class staticApp {
  * instance new 생성 시 원조 클래스의 non static 인스턴스 메서드와 변수들은 복제되어 별개로 존재
  * instance new 생성 시 원조 클래스의 static 메서드와 변수들은 원조 클래스에 소속된 것들을 가리킨다(별도X)
  * -> 인스턴스로 접근하여 클래스 소속의 static 메서드, 변수를 제어할 수 있다. -> 모든 자녀 인스턴스의 클래스 메서드, 변수들이 바뀜
- * 
  * */

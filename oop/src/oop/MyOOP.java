@@ -9,6 +9,7 @@ public class MyOOP {
 		clone.A("***");
 		clone.B("===");
 		clone.B("~~~");
+		
 	}
 
 }

@@ -1,0 +1,66 @@
+
+**오버라이딩(Overriding)**과 **오버로딩(Overloading)**은 객체 지향 프로그래밍(OOP)에서 중요한 개념으로, 둘 다 메서드와 관련된 기능 확장을 다룹니다. 그러나 이 둘은 목적과 사용 방식에서 명확한 차이가 있습니다.
+
+1. 오버라이딩(Overriding)
+정의: 부모 클래스의 메서드를 자식 클래스에서 재정의하는 것.
+목적: 상속받은 메서드의 동작을 자식 클래스에 맞게 변경.
+특징:
+메서드 이름, 매개변수, 반환 타입이 완전히 동일해야 함.
+접근 제어자는 부모 클래스의 메서드와 같거나 더 넓은 범위로 설정해야 함. (예: protected → public 가능)
+반드시 상속 관계에서 발생.
+런타임(실행 시간) 다형성을 구현.
+예시:
+
+	class Parent {
+	    public void greet() {
+	        System.out.println("Hello from Parent!");
+	    }
+	}
+	
+	class Child extends Parent {
+	    @Override
+	    public void greet() { // 부모 클래스의 greet 메서드 재정의
+	        System.out.println("Hello from Child!");
+	    }
+	}
+	
+	public class Main {
+	    public static void main(String[] args) {
+	        Parent p = new Child();
+	        p.greet(); // "Hello from Child!" 출력
+	    }
+	}	
+	
+	
+2. 오버로딩(Overloading)
+정의: 같은 이름의 메서드를 매개변수의 개수나 타입을 다르게 하여 여러 개 정의하는 것.
+목적: 같은 기능을 수행하지만 다른 방식으로 호출할 수 있게 설계.
+특징:
+메서드 이름이 같지만 매개변수의 개수, 순서, 타입이 달라야 함.
+반환 타입만 다른 경우에는 오버로딩이 성립하지 않음.
+상속과는 무관하게 같은 클래스 내에서 발생.
+컴파일 타임(컴파일 시점) 다형성을 구현.
+예시:
+
+	class Calculator {
+	    public int add(int a, int b) {
+	        return a + b;
+	    }
+	
+	    public double add(double a, double b) { // 매개변수 타입이 다름
+	        return a + b;
+	    }
+	
+	    public int add(int a, int b, int c) { // 매개변수 개수가 다름
+	        return a + b + c;
+	    }
+	}
+	
+	public class Main {
+	    public static void main(String[] args) {
+	        Calculator calc = new Calculator();
+	        System.out.println(calc.add(1, 2));       // 3
+	        System.out.println(calc.add(1.5, 2.5));   // 4.0
+	        System.out.println(calc.add(1, 2, 3));    // 6
+	    }
+	}
